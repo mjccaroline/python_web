@@ -1,0 +1,13 @@
+{% extends 'masterfile.html' %}
+
+{% block mybody %}
+
+<h1>Faculties:</h1>
+
+<ul class="list-group"></ul>
+
+{% for fac in sendfac %}
+
+<li class="list-group-item">{{fac.name}}</li>
+{% endfor %}
+{% endblock %}
